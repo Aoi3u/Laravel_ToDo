@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen bg-blue-50">
-    <header class="bg-blue-700 shadow">
+    <header class="bg-blue-500 shadow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4">
                 <p class="text-white text-2xl font-bold">ToDo</p>
@@ -49,7 +49,7 @@
                     <div class="inline-block min-w-full py-2 align-middle">
                         <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
                             <table class="min-w-full divide-y divide-gray-300">
-                                <thead class="bg-blue-600">
+                                <thead class="bg-blue-500">
                                     <tr>
                                         <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-m font-semibold text-white">
                                             タスク一覧
@@ -100,7 +100,7 @@
             </div>
         </div>
     </main>
-    <footer class="bg-blue-700">
+    <footer class="bg-blue-500">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4 text-center">
                 <p class="text-white text-sm">© 2025 ToDo Application.</p>
