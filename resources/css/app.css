@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typing {
+    word-break: break-all;
+    letter-spacing: 0.02em;
+}
+
+.typing span {
+    display: none;
+}
+
+.typing:after {
+    content: "_";
+    animation: typingCursor 0.8s steps(2, start) infinite;
+}
+
+@keyframes typingCursor {
+    50% {
+        opacity: 0;
+    }
+}
