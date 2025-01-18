@@ -12,8 +12,7 @@
 }
 
 .typing:after {
-    content: "|";
-    font-size: 1em;
+    content: "_";
     animation: typingCursor 0.8s steps(2, start) infinite;
 }
 

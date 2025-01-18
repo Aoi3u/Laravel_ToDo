@@ -14,7 +14,7 @@
     <header class="bg-blue-600 shadow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4">
-                <p class="text-white text-2xl font-bold">ToDo</p>
+                <p class="text-white text-3xl font-bold">Taskly</p>
             </div>
         </div>
     </header>
@@ -63,15 +63,15 @@
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200 bg-white">
-                                    @foreach ($tasks as $item)
+                                    @foreach ($tasks as $task)
                                     <tr>
                                         <td class="px-3 py-4 text-m text-gray-700 font-medium">
-                                            <div>{{ $item->name }}</div>
+                                            <div>{{ $task->name }}</div>
                                         </td>
                                         <td class="p-0 text-right text-sm font-medium">
                                             <div class="flex justify-end space-x-1">
                                                 <!-- 完了ボタン -->
-                                                <form action="/tasks/{{ $item->id }}" method="post" class="inline-block" role="menuitem" tabindex="-1">
+                                                <form action="/tasks/{{ $task->id }}" method="post" class="inline-block" role="menutask" tabindex="-1">
                                                     @csrf
                                                     @method('PUT')
                                                     <button type="submit" class="bg-emerald-500 py-4 px-5 mr-2 text-white rounded-md hover:bg-emerald-600 transition-colors">
@@ -79,11 +79,11 @@
                                                     </button>
                                                 </form>
                                                 <!-- 編集ボタン -->
-                                                <a href="/tasks/{{ $item->id }}/edit" class="inline-block py-4 px-4 text-sky-500 underline underline-offset-2 rounded-md hover:bg-sky-100 transition-colors">
+                                                <a href="/tasks/{{ $task->id }}/edit" class="inline-block py-4 px-4 text-sky-500 underline underline-offset-2 rounded-md hover:bg-sky-100 transition-colors">
                                                     編集
                                                 </a>
                                                 <!-- 削除ボタン -->
-                                                <form action="/tasks/{{ $item->id }}" method="post" class="inline-block" role="menuitem" tabindex="-1">
+                                                <form action="/tasks/{{ $task->id }}" method="post" class="inline-block" role="menutask" tabindex="-1">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="py-4 px-4 mr-2 text-red-500 rounded-md hover:bg-red-100 transition-colors">
@@ -106,7 +106,7 @@
     <footer class="bg-blue-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4 text-center">
-                <p class="text-white text-sm">© 2025 ToDo.</p>
+                <p class="text-white text-sm">© 2025 Taskly.</p>
             </div>
         </div>
     </footer>
