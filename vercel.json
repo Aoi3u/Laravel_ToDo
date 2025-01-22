@@ -44,21 +44,5 @@
         "DB_HOST": "",
         "DB_PORT": ""
     },
-    "version": 2,
-    "builds": [
-        {
-            "src": "api/index.php",
-            "use": "vercel-php@0.8.2"
-        },
-        {
-            "src": "public/**",
-            "use": "vercel-php@0.8.2"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
-    ]
+    "version": 2
 }
