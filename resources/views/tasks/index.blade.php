@@ -14,7 +14,7 @@
     <header class="bg-blue-600 shadow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4">
-                <p class="text-white text-3xl font-bold">Taskly</p>
+                <p class="text-white text-3xl font-bold">ToDo</p>
             </div>
         </div>
     </header>
@@ -84,13 +84,15 @@
                                                     編集
                                                 </a>
                                                 <!-- 削除ボタン -->
-                                                <form action="/tasks/{{ $task->id }}" method="post" class="inline-block" role="menutask" tabindex="-1">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="py-4 px-4 mr-2 text-red-500 rounded-md hover:bg-red-100 transition-colors">
-                                                        削除
-                                                    </button>
-                                                </form>
+                                                <div>
+                                                    <form onsubmit="return deleteTask();" action="/tasks/{{ $task->id }}" method="post" class="inline-block" role="menutask" tabindex="-1">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="py-4 px-4 mr-2 text-red-500 rounded-md hover:bg-red-100 transition-colors">
+                                                            削除
+                                                        </button>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -107,10 +109,18 @@
     <footer class="bg-blue-600">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="py-4 text-center">
-                <p class="text-white text-sm">© 2025 Taskly.</p>
+                <p class="text-white text-sm">© 2025 ToDo.</p>
             </div>
         </div>
     </footer>
+    <script>
+        function deleteTask() {
+            if (confirm("本当に削除しますか？")) {
+                return true;
+            }
+            return false;
+        }
+    </script>
 </body>
 
 </html>
