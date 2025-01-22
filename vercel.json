@@ -28,8 +28,10 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp",
-        "DB_CONNECTION": "mysql",
-        "DB_HOST": "",
-        "DB_PORT": ""
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "laravel_todo",
+        "DB_USERNAME": "Aoi3u",
+        "DB_PASSWORD": "password3"
     }
 }
