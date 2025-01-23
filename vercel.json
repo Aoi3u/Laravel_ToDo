@@ -27,11 +27,6 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
-        "VIEW_COMPILED_PATH": "/tmp",
-        "DB_HOST": "127.0.0.1",
-        "DB_PORT": "3306",
-        "DB_DATABASE": "laravel_todo",
-        "DB_USERNAME": "Aoi3u",
-        "DB_PASSWORD": "password3"
+        "VIEW_COMPILED_PATH": "/tmp"
     }
 }
