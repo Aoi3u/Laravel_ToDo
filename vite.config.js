@@ -11,4 +11,5 @@ export default defineConfig({
     server: {
         https: true, // HTTPS対応
     },
+    base: "",
 });
