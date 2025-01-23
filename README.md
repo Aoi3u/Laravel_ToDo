@@ -3,6 +3,7 @@
 Laravelを用いたCRUD操作実装の練習のために、簡易タスク管理アプリを作りました。
 
 ### 使用技術・環境など
+・HTML, TailwindCSS, JavaScript <br>
 ・PHP 8.2 <br>
 ・Laravel 9<br>
 ・vercel<br>
