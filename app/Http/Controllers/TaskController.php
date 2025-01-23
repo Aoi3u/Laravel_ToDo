@@ -101,7 +101,6 @@ class TaskController extends Controller
 
             Validator::make($request->all(), $rules, $messages)->validate();
 
-
             //該当のタスクを検索
             $task = Task::find($id);
 
