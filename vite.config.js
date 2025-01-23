@@ -8,8 +8,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    server: {
-        https: true, // HTTPS対応
-    },
-    base: "",
+    base: "https://laravel-to-nhby7dlox-aoi3us-projects.vercel.app",
 });
