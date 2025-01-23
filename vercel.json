@@ -28,5 +28,12 @@
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie",
         "VIEW_COMPILED_PATH": "/tmp"
-    }
+    },
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "destination": "https://laravel-to-oyd58ejgs-aoi3us-projects.vercel.app/$1",
+            "permanent": true
+        }
+    ]
 }
