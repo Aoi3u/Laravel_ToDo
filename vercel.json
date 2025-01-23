@@ -12,7 +12,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/api/index.php"
+            "dest": "/tasks"
         }
     ],
     "env": {
