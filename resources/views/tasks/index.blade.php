@@ -73,7 +73,7 @@
                                                 <form action="/tasks/{{ $task->id }}" method="post" class="inline-block" role="menutask" tabindex="-1">
                                                     @csrf
                                                     @method('PUT')
-                                                    <input type="hidden" name="status" value="{{$task->status}}">
+                                                    <input type="hidden" name="status" value="1">
                                                     <button type="submit" class="bg-emerald-500 py-4 px-5 mr-2 text-white rounded-md hover:bg-emerald-600 transition-colors">
                                                         完了
                                                     </button>
